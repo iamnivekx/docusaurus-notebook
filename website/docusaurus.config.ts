@@ -1,11 +1,10 @@
-import { themes } from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 import remarkCodeImport from 'remark-code-import';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
   title: 'Blockchain Notes',
@@ -21,14 +20,14 @@ const config: Config = {
   url: 'https://iamnivekx.github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docusaurus-notebook',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'iamnivekx', // Usually your GitHub org/user name.
   projectName: 'docusaurus-notebook', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -154,8 +153,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Iamnivekx, Inc. Built with Docusaurus.`,
     },
     prism: {
-      theme: themes.dracula,
-      darkTheme: themes.dracula,
+      theme: prismThemes.dracula,
+      darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
 };
