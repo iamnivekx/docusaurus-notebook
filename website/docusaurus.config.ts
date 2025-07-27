@@ -27,7 +27,7 @@ const config: Config = {
   organizationName: 'iamnivekx', // Usually your GitHub org/user name.
   projectName: 'docusaurus-notebook', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -115,7 +115,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/blog',
             },
           ],
         },

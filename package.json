@@ -7,7 +7,8 @@
   },
   "scripts": {
     "build": "pnpm --filter website build",
-    "start": "pnpm --filter website start"
+    "start": "pnpm --filter website start",
+    "deploy": "pnpm --filter website deploy"
   },
   "dependencies": {
     "vitest": "^3.2.4"
