@@ -1,22 +1,22 @@
-const typeforce = require('typeforce');
-const OPS = require('bitcoin-ops');
-const ecc = require('tiny-secp256k1');
-const pushdata = require('pushdata-bitcoin');
+import typeforce from 'typeforce';
+import OPS from 'bitcoin-ops';
+import ecc from 'tiny-secp256k1';
+import pushdata from 'pushdata-bitcoin';
 const REVERSE_OPS = require('bitcoin-ops/map');
 const OP_INT_BASE = OPS.OP_RESERVED; // OP_1 - 1
 
-function asMinimalOP(buffer) {
+export function asMinimalOP(buffer) {
   if (buffer.length === 0) return OPS.OP_0;
   if (buffer.length !== 1) return;
   if (buffer[0] >= 1 && buffer[0] <= 16) return OP_INT_BASE + buffer[0];
   if (buffer[0] === 0x81) return OPS.OP_1NEGATE;
 }
 
-function isCanonicalPubKey(buffer) {
+export function isCanonicalPubKey(buffer) {
   return ecc.isPoint(buffer);
 }
 
-function compile(chunks) {
+export function compile(chunks) {
   if (Buffer.isBuffer(chunks)) return chunks;
   typeforce(typeforce.Array, chunks);
 

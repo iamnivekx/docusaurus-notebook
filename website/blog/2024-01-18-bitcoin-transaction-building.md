@@ -17,13 +17,13 @@ tags: [bitcoin, transaction, psbt, signature, bitcoinjs-lib]
 
 首先需要安装我们的比特币工具包：
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts file=<rootDir>/examples/bitcoin/address/address.js showLineNumbers
 
 ```
 
 ### 2. 密钥管理
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts file=<rootDir>/examples/bitcoin/address/address.js showLineNumbers
 
 ```
 
@@ -31,7 +31,7 @@ tags: [bitcoin, transaction, psbt, signature, bitcoinjs-lib]
 
 PSBT (Partially Signed Bitcoin Transaction) 是现代比特币交易的标准格式。
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts file=<rootDir>/examples/bitcoin/tx/bitcoin.js showLineNumbers
 
 ```
 
@@ -39,13 +39,13 @@ PSBT (Partially Signed Bitcoin Transaction) 是现代比特币交易的标准格
 
 ### 1. 地址生成
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts file=<rootDir>/examples/bitcoin/address/address.js showLineNumbers
 
 ```
 
 ### 2. 多签名交易
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts file=<rootDir>/examples/bitcoin/address/multisig.js showLineNumbers
 
 ```
 
@@ -53,13 +53,13 @@ PSBT (Partially Signed Bitcoin Transaction) 是现代比特币交易的标准格
 
 ### 1. 单签名
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts file=<rootDir>/examples/bitcoin/tx/bitcoin.js showLineNumbers
 
 ```
 
 ### 2. 多签名
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts file=<rootDir>/examples/bitcoin/tx/bitcoin.js#L15-L42 showLineNumbers
 
 ```
 
@@ -67,13 +67,13 @@ PSBT (Partially Signed Bitcoin Transaction) 是现代比特币交易的标准格
 
 RBF 允许用更高手续费的交易替换未确认的交易。
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts file=<rootDir>/examples/bitcoin/tx/rbf.js showLineNumbers
 
 ```
 
 ## 交易验证
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts
 
 ```
 
@@ -89,7 +89,7 @@ RBF 允许用更高手续费的交易替换未确认的交易。
 
 ## 完整交易流程示例
 
-```ts file=<rootDir>/src/components/Highlight.js#L3- showLineNumbers
+```ts
 
 ```
 

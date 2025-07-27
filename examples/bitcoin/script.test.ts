@@ -1,5 +1,6 @@
-const { fromASM, toASM } = require('./script');
-const { valid, invalid } = require('./__mocks__/script.json');
+import { describe, test, expect } from 'vitest';
+import { fromASM, toASM } from './script';
+import { valid, invalid } from './__mocks__/script.json';
 
 describe('Bitcoin script', () => {
   describe('fromASM/toASM', () => {
