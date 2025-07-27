@@ -1,0 +1,12 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.0"
+  },
+  "scripts": {
+    "build": "pnpm --filter website build",
+    "start": "pnpm --filter website start"
+  }
+}
